@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <title>Alluring Lens By AR</title>
+    <link rel="shortcut icon" href="./assests/img/logo.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "url_for('static', filename='assests/css/gallery.css')">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,600'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+<link rel="stylesheet" href="url_for('static', filename='assests/css/gallery.css')">
+</head>
+<body>
+    
+    <!-- header -->
+    <header id="nav-header" class="">
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <a href="#"><img src="./assests/img/logo.png" alt="Alluring Lens by AR" height="20px" width="20px"></a> 
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s"><a href="#">Home</a></li>
+                        <li class="nav-link" style="--i: .85s"><a href="#">Services <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Maternity</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">NewBorn</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Sitter</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">More <i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Cake Smash</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Toddler</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Fine Art Portraits</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Family</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Fashion</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="">Portfolio <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Maternity<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="classic_maternity_gallery.html">Classic Maternity</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Glamor Maternity</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Traditional Maternity</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Outdoor Maternity</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Baby<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">New Born</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Sitter</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Toddler</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Family</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Mommy and Me</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Travel</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Fashion</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Product</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Fine Art</a>
+                                    </li>
+                                    
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="https://facebook.com/AlluringLensbyAR" target="_blank" class="btn solid"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/alluringlensbyar" target="_blank" class="btn solid"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=919643257889&text=Hello, More Information!" target="_blank" class="btn transparent"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id = "header" class = "vh-100 flex">
+        <div class = "container">
+            <div class = "header-content">
+                <h2>We are one of the best <br></h2><h1><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "1000" data-words = '["Maternity", "New Born", "Toddler", "Family", "Fashion"]'></span></h1>
+                <h2><br>Photographer in Banglore</h2>
+                <h3>Alluring Lens by AR</h3>
+
+                <ul class = "social-links">
+                    <li>
+                        <a href = "https://facebook.com/AlluringLensbyAR" target="_blank" class = "flex">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://api.whatsapp.com/send?phone=919643257889&text=Hello, More Information!" target="_blank" class = "flex">
+                            <i class = "fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://instagram.com/alluringlensbyar" target="_blank" class = "flex">
+                            <i class = "fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://in.pinterest.com/akanksharajput1" target="_blank" class = "flex">
+                            <i class = "fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end of header -->
+
+    <!-- main content -->
+    <main>
+        <!-- Swipper Image -->
+
+         <!-- portfolio section -->
+         <section id = "portfolio" class = "vh-100 py-7">
+            <article class='gallery'>
+                <a class='gallery-link' href='./assests/img/pic1.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='./assests/img/pic1.jpg' width='1200'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic2.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='./assests/img/pic2.jpg' width='1200'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic3.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1200' src='./assests/img/pic3.jpg' width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic4.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1000' src='./assests/img/pic4.jpg' width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic5.JPG'>
+                  <figure class='gallery-image'>
+                    <img height='1000' src='./assests/img/pic5.jpg' width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic6.JPG'>
+                  <figure class='gallery-image'>
+                    <img height='1200' src='./assests/img/pic6.JPG' width='1400'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic7.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='./assests/img/pic7.jpg' width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic8.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='./assests/img/pic8.jpg' width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='./assests/img/pic9.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1000' src='./assests/img/pic10.jpg' width='1600'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+              </article>
+        </section>
+        <!-- end of portfolio section -->
+
+        <!-- about section -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <section id = "about" class = "about py-7 swiper-slide">
+                    <div class = "container">
+                        <div class = "about-content grid">
+                            <div class = "about-left">
+                                <img src = "./assests/img/about-pic.jpg" alt = "">
+                            </div>
+                            <div class = "about-right">
+                                <div class = "title">
+                                    <h2>Akanksha Rajput</h2>
+                                </div>
+                                <p class = "lead">Akanksha Rajput is a maternity, newborn, baby photographer and founder at <b style="font-weight: bold;">Alluring lens by AR</b> based in Banglore. <br>
+                                    Photography has been a part of Akanksha’s life since the day she was given her first camera, a Nikon D3500, almost 10 years ago. The professional bent came when she became a mom in 2019-20.<br><br>
+                                    Akanksha is involved in all the aspects of her work – from creating backdrops, weaving props, designing clothes, styling, post-processing and everything in-between.<br> She considers her design sense and attention to detail as her most valuable assets.
+                                    Akanksha lives with her husband and is a mom to a 4 year old daughter.
+                                    Akanksha has studied Information Technology in Bhiwani and completed Diploma in Photography from Drishti School of Photography and National Institute of Creative Communication, Banglore<br><br>
+                                    She is an ex-software professional, who quit her Software career to pursue her passions and to take care of a naughty 4 year old. She is a mom first and photographer next.  So be rest assured that your baby is safe in the hands of another mother!</p>
+                                <a href = "#work" class = "btn-down">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id = "about" class = "about py-7 swiper-slide">
+                    <div class = "container">
+                        <div class = "about-content grid">
+                            <div class = "about-left">
+                                <img src = "./assests/img/anchal.jpg" alt = "">
+                            </div>
+                            <div class = "about-right">
+                                <div class = "title">
+                                    <h2>Anchal Rajput</h2>
+                                </div>
+                                <p class = "lead">Anchal is a co-founder at <b style="font-weight: bold;">Alluring lens by AR</b> based in Banglore.<br>
+                                    Anchal is involved in all the aspects of her work – from handeling Social Media, marketing, designing clothes, styling, post-processing and everything in-between.<br> She considers her design sense and attention to detail as her most valuable assets.
+                                    <br><br>Anchal has completed B.Sc. in Biotech from Jain University, Banglore and then has learned Makeup and UI/UX design from National Institute of Creative Communication, Banglore.</p>
+                                <p class = "lead">Anchal also becomes a model sometimes when a new concept needs to be executed.<br>Her passion is to take Alluring Lens Studio to the next level.
+                                </p>
+                                <a href = "#work" class = "btn-down">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+          </div>
+        
+        <!-- end of about section -->
+
+        <!-- work section -->
+        <section id = "work" class = "vh-100 py-7 services">
+            <h2 class="section__title container">what are we doing?</h2>
+            <div class = "services__container container grid">
+                <div class="services__card">
+                    <span class = "icon"><img src = "./assests/img/pic19.JPG"></span>
+                    <h2 class="services__title">Maternity</h2>
+                    <p class="services__discription">Motherhood is a joyful experience and nurturing a life within oneself is a miracle. Maternity photography helps revisit the precious moments of the baby growing inside the mother's womb.</p>
+                    <div class="services__border"></div>
+                </div>
+                <div class="services__card">
+                    <span class = "icon"><img src = "./assests/img/pic8.JPG"></span>
+                    <h2 class="services__title">New Born</h2>
+                    <p class="services__discription">Infants are simply adorable, but they grow up in the blink of an eye. You can preserve those precious early days of your child's life by treating yourself to an unforgettable newborn photography session.</p>
+                    <div class="services__border"></div>
+                </div>
+                <div class="services__card">
+                    <span class = "icon"><img src = "./assests/img/pic8.JPG"></span>
+                    <h2 class="services__title">New Born</h2>
+                    <p class="services__discription">Infants are simply adorable, but they grow up in the blink of an eye. You can preserve those precious early days of your child's life by treating yourself to an unforgettable newborn photography session.</p>
+                    <div class="services__border"></div>
+                </div>                        
+            </div>
+        </section>
+        <!-- end of work section -->
+
+       
+
+        <!-- contact section -->
+        <section id = "contact" class = "py-7">
+            <div class = "container">
+                <div class = "contact-content flex">
+                    <div class = "contact-left">
+                        <div class="title">
+                            <h2>contact with us</h2>
+                        </div>
+                        <p class = "lead" style="font-size: 1.25rem;"><i class = "fas fa-phone-alt"></i> +91-9643257889</p>
+                        <p class = "lead" style="font-size: 1.25rem;"><i class = "fas fa-envelope"></i> akanksharajput.photography@gmail.com</p>
+                        <p class="lead"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.6264465012473!2d77.61826627600388!3d13.122834911542704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19b8c63cd211%3A0xe66e379bf30c97f7!2sAlluring%20Lens%20By%20AR!5e0!3m2!1sen!2sin!4v1678959546615!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Allluring Lens by AR</iframe></p>
+                        <form action="">
+                            <input type = "text" class = "form-control" placeholder="Your name here ...">
+                            <input type = "email" class = "form-control" placeholder="Your email here">
+                            <input type = "phone" class = "form-control" placeholder="Your phone number here">
+                            <input type = "submit" class = "btn-submit btn" value = "Submit">
+                        </form>
+                    </div>
+
+                    <div class = "contact-right">
+                        <img src = "./assests/img/contact-pic.jpg" alt = "contact image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+        <section id = "testimonial" class = "py-7">
+            <div class = "container">
+                <div class = "test-content">
+                    <div class = "title">
+                        <h2>Testimonials</h2>
+                        <a href = "#insta" class = "btn-down btn-down-white">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div class="elfsight-app-79e66639-bb2a-44e4-8134-08a4a11edfbc">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- instagram section -->
+        <section id = "insta" class = "py-7">
+            <div class = "container">
+                <div class = "insta-content">
+                    <div class = "title">
+                        <h2>instagram</h2>
+                        <a href = "#footer" class = "btn-down btn-down-white">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <!-- Place <div> tag where you want the feed to appear -->
+                    <div id="curator-feed-default-feed-layout">
+                        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a>
+                    </div>
+                    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end of instagram section -->
+    </main>
+    <!-- end of main content -->
+
+    <!-- footer -->
+    <footer id = "footer" class = "py-7">
+        <div class = "container">
+            <div class = "footer-content">
+                <div>
+                    <h3>Alluring Lens by AR</h3>
+                    <div><img src = "./assests/img/logo.png" style="padding: 1rem;"></div>
+                </div>
+                <div>
+                    <h3>Links</h3>
+                    <ul class = "flex">
+                        <li><a href = "#">About Me</a></li>
+                        <li><a href = "#">Work</a></li>
+                        <li><a href = "#">Portfolio</a></li>
+                        <li><a href = "#">Contact Me</a></li>
+                        <li><a href = "#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- typewriting js -->
+    <script src = "assests/typewriting-master/typewriting.js"></script>
+
+    <!-- Instagram Script -->
+    <!-- <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+         -->
+        </script>
+        <!-- Google Reviews Script -->
+        <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+
+        <!-- Swipper JS -->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Main JS -->
+        <script src="assests/js/main.js"></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+<script src='https://codepen.io/mican/pen/XgRmNr.js'></script>
+        
+</body>
+</html>
