@@ -1,6 +1,6 @@
 import os
-from flask import Flask, session
-from . import db, auth, blog
+from flask import Flask, session, render_template
+from . import db, auth, blog, home, clients
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -36,9 +36,20 @@ def create_app(test_config=None):
         return 'Hello World!'
 
     db.init_app(app)
+    app.register_blueprint(home.bp)
+    app.register_blueprint(clients.bp)
     app.register_blueprint(auth.bp)
     app.register_blueprint(blog.bp)
     app.add_url_rule('/', endpoint='index')
+
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template('404.html'), 404
+
+
+    @app.errorhandler(500)
+    def page_not_found(e):
+        return render_template('500.html'), 500
 
 
     return app

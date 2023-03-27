@@ -8,19 +8,6 @@ from .db import get_db
 
 bp = Blueprint('blog', __name__)
 
-@bp.route('/')
-def index():
-    return stream_template('index.html')
-
-
-@bp.route('/contact')
-def contact():
-    return stream_template('contact.html')
-
-@bp.route('/about')
-def about():
-    return stream_template('about.html')
-
 @bp.route('/blog/')
 def blog_index():
     db = get_db()
@@ -107,3 +94,7 @@ def delete(id):
     db.execute('DELETE FROM post WHERE id = ?', (id,))
     db.commit()
     return redirect(url_for('blog.index'))
+
+
+
+
