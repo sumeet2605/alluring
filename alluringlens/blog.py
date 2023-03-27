@@ -1,5 +1,5 @@
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
+    Blueprint, flash, g, redirect, render_template, request, url_for, stream_template
 )
 from werkzeug.exceptions import abort
 
@@ -10,6 +10,19 @@ bp = Blueprint('blog', __name__)
 
 @bp.route('/')
 def index():
+    return stream_template('index.html')
+
+
+@bp.route('/contact')
+def contact():
+    return stream_template('contact.html')
+
+@bp.route('/about')
+def about():
+    return stream_template('about.html')
+
+@bp.route('/blog/')
+def blog_index():
     db = get_db()
     posts = db.execute(
         'SELECT p.id, title, body, created, author_id, username'
@@ -18,7 +31,7 @@ def index():
     ).fetchall()
     return render_template('blog/index.html', posts=posts)
 
-@bp.route('/create', methods=('GET', 'POST'))
+@bp.route('/blog/create', methods=('GET', 'POST'))
 @login_required
 def create():
     if request.method == 'POST':
@@ -59,7 +72,7 @@ def get_post(id, check_author=True):
 
     return post
 
-@bp.route('/<int:id>/update', methods=('GET', 'POST'))
+@bp.route('/blog/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
     post = get_post(id)
@@ -86,7 +99,7 @@ def update(id):
 
     return render_template('blog/update.html', post=post)
 
-@bp.route('/<int:id>/delete', methods=('POST',))
+@bp.route('/blog/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
     get_post(id)

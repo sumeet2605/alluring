@@ -1,9 +1,10 @@
 import os
-from flask import Flask
+from flask import Flask, session
 from . import db, auth, blog
 from dotenv import load_dotenv
 
 load_dotenv()
+
 
 def create_app(test_config=None):
     # Create and configure the App
@@ -12,7 +13,8 @@ def create_app(test_config=None):
         SECERT_KEY =os.getenv('SECERT_KEY'),
         DATABASE=os.path.join(app.instance_path, 'alluringlens.sqlite'),
     )
-    
+    app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+
 
     if test_config is None:
         # load the instance config, if it exists, when not testing

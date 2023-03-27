@@ -30,11 +30,11 @@
   //# sourceURL=coffeescript
 
 // Instagram JS
-// (function(){
-//   var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-//       i.src="https://cdn.curator.io/published/0b0b0f98-c42c-4d62-9b68-0d8620a8a246.js";
-//   e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-// })();
+(function(){
+  var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+      i.src="https://cdn.curator.io/published/0b0b0f98-c42c-4d62-9b68-0d8620a8a246.js";
+  e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
 
 
 // Swipper

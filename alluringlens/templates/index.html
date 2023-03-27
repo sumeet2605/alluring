@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+    <!-- header -->
+    {% block content %}
+    <!-- main content -->
+    <main>
+        <!-- Swipper Image -->
+
+         <!-- portfolio section -->
+         <section id = "portfolio" class = "vh-100 py-7">
+            <article class='gallery'>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic1.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1400' src="{{ url_for('static', filename='img/pic1.JPG') }}" width='1200'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic2.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1400' src="{{ url_for('static', filename='img/pic2.JPG') }}" width='1200'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic3.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1200' src="{{ url_for('static', filename='img/pic3.JPG') }}" width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic4.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1000' src="{{ url_for('static', filename='img/pic4.JPG') }}" width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic5.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1000' src="{{ url_for('static', filename='img/pic5.JPG') }}" width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic6.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1200' src="{{ url_for('static', filename='img/pic6.JPG') }}" width='1400'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic7.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1400' src="{{ url_for('static', filename='img/pic7.JPG') }}" width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic8.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1400' src="{{ url_for('static', filename='img/pic8.JPG') }}" width='1000'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href="{{ url_for('static', filename='img/pic9.JPG') }}">
+                  <figure class='gallery-image'>
+                    <img height='1000' src="{{ url_for('static', filename='img/pic9.JPG') }}" width='1600'>
+                    <figcaption>Photo caption</figcaption>
+                  </figure>
+                </a>
+              </article>
+        </section>
+        <!-- end of portfolio section -->
+
+        
+        <!-- work section -->
+        <section id = "work" class = "vh-100 py-7 services">
+            <h2 class="section__title container">what are we doing?</h2>
+            <div class = "services__container container grid">
+                <div class="services__card">
+                    <span class = "icon"><img src = "{{ url_for('static', filename='img/pic19.JPG') }}"></span>
+                    <h2 class="services__title">Maternity</h2>
+                    <p class="services__discription">Motherhood is a joyful experience and nurturing a life within oneself is a miracle. Maternity photography helps revisit the precious moments of the baby growing inside the mother's womb.</p>
+                    <div class="services__border"></div>
+                </div>
+                <div class="services__card">
+                    <span class = "icon"><img src = "{{ url_for('static', filename='img/pic8.JPG') }}"></span>
+                    <h2 class="services__title">New Born</h2>
+                    <p class="services__discription">Infants are simply adorable, but they grow up in the blink of an eye. You can preserve those precious early days of your child's life by treating yourself to an unforgettable newborn photography session.</p>
+                    <div class="services__border"></div>
+                </div>
+                <div class="services__card">
+                    <span class = "icon"><img src = "{{ url_for('static', filename='img/pic8.JPG') }}"></span>
+                    <h2 class="services__title">New Born</h2>
+                    <p class="services__discription">Infants are simply adorable, but they grow up in the blink of an eye. You can preserve those precious early days of your child's life by treating yourself to an unforgettable newborn photography session.</p>
+                    <div class="services__border"></div>
+                </div>                        
+            </div>
+        </section>
+        <!-- end of work section -->
+
+       
+
+        <section id = "testimonial" class = "py-7">
+            <div class = "container">
+                <div class = "test-content">
+                    <div class = "title">
+                        <h2>Testimonials</h2>
+                        <a href = "#insta" class = "btn-down btn-down-white">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div class="elfsight-app-79e66639-bb2a-44e4-8134-08a4a11edfbc">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- instagram section -->
+        <section id = "insta" class = "py-7">
+            <div class = "container">
+                <div class = "insta-content">
+                    <div class = "title">
+                        <h2>instagram</h2>
+                        <a href = "#footer" class = "btn-down btn-down-white">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <!-- Place <div> tag where you want the feed to appear -->
+                    <div id="curator-feed-default-feed-layout">
+                        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a>
+                    </div>
+                    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end of instagram section -->
+    </main>
+    <!-- end of main content -->
+
+       {% endblock %}

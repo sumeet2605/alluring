@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block content %}
+
+<!-- about section -->
+      <section id = "about" class = "about py-7">
+            <div class = "container">
+                <div class = "about-content grid">
+                    <div class = "about-left">
+                        <img src = "{{ url_for('static', filename='img/about-pic.JPG') }}" alt = "">
+                    </div>
+                    <div class = "about-right">
+                        <div class = "title">
+                            <h2>Akanksha Rajput</h2>
+                        </div>
+                        <p class = "lead">Akanksha Rajput is a maternity, newborn, baby photographer and founder at <b style="font-weight: bold;">Alluring lens by AR</b> based in Banglore. <br>
+                            Photography has been a part of Akanksha’s life since the day she was given her first camera, a Nikon D3500, almost 10 years ago. The professional bent came when she became a mom in 2019-20.<br><br>
+                            Akanksha is involved in all the aspects of her work – from creating backdrops, weaving props, designing clothes, styling, post-processing and everything in-between.<br> She considers her design sense and attention to detail as her most valuable assets.
+                            Akanksha lives with her husband and is a mom to a 4 year old daughter.
+                            Akanksha has studied Information Technology in Bhiwani and completed Diploma in Photography from Drishti School of Photography and National Institute of Creative Communication, Banglore<br><br>
+                            She is an ex-software professional, who quit her Software career to pursue her passions and to take care of a naughty 4 year old. She is a mom first and photographer next.  So be rest assured that your baby is safe in the hands of another mother!</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "about" class = "about py-7">
+            <div class = "container">
+                <div class = "about-content grid">
+                    <div class = "about-left">
+                        <img src = "{{ url_for('static', filename='img/anchal.jpg') }}" alt = "">
+                    </div>
+                    <div class = "about-right">
+                        <div class = "title">
+                            <h2>Anchal Rajput</h2>
+                        </div>
+                        <p class = "lead">Anchal is a co-founder at <b style="font-weight: bold;">Alluring lens by AR</b> based in Banglore.<br>
+                            Anchal is involved in all the aspects of her work – from handeling Social Media, marketing, designing clothes, styling, post-processing and everything in-between.<br> She considers her design sense and attention to detail as her most valuable assets.
+                            <br><br>Anchal has completed B.Sc. in Biotech from Jain University, Banglore and then has learned Makeup and UI/UX design from National Institute of Creative Communication, Banglore.</p>
+                        <p class = "lead">Anchal also becomes a model sometimes when a new concept needs to be executed.<br>Her passion is to take Alluring Lens Studio to the next level.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+<!-- end of about section -->
+
+
+
+{% endblock %}
